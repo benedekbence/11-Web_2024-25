@@ -1,0 +1,66 @@
+body { 
+	background-color:gray;
+	color:white;
+}
+h1 {
+	text-align:center;
+	font-size:50px;
+	font-family:"arial";
+}
+#div {
+	border: 3px solid black;
+	/* padding: 10px 9px 8px 7px;	 */
+	padding: 10px;
+	box-shadow:inset 0px 0px 7px black;
+}
+#doboz{
+	width: 200px;
+	height:100px;
+	border: 1px solid black;
+	box-shadow:5px 5px 10px black;
+	/* margin:0px 0px 0px 10px; */
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+	margin:auto;
+	
+}
+img {
+	width:200px;
+}
+.jobb{
+	float: right;
+}
+
+.alma{
+	color:lightblue;
+}
+
+.korte{
+	color:lightpink;
+	
+}
+
+.alma, .korte {
+	font-weight:bold;
+}
+div .korte{
+	font-size:40px
+}
+div>.korte{
+	font-family:courier;
+	display:block;
+}
+
+div>.alma{
+	display:block;
+}
+
+.belso {
+	display:inherit;
+}
+
+
+/* 
+display: inline, block, inherit, none, initial,inline-block
+ */

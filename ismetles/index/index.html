@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<title>Istmétlés</title>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="style.css">
+		<style>
+				h2,h1 {
+					color: darkblue;
+				}
+		</style>
+		
+	</head>
+	<!-- <body style="tulajdonság: értkéke; tul2:ertek2;"> -->
+	<body style="background-color:lightblue; color:blue;">
+	<h1>Év eleji ismétlés</h1>
+	
+	
+	<h2>Tartalom jegyzék</h2>
+		<ul>
+			<li><a href="#hiperhiv" >Hiperhivatkozás</a></li>
+			<li><a href="#cimsor" >Címsorok használata</a></li>
+			<li><a href="#vonal" >Vízszintes vonal</a></li>
+			<li><a href="#kepek" >Képek</a></li>
+			
+		</ul>
+	
+	<h2 id="cimsor">Címsorok használata</h2>
+	
+	<h2>Címsor2</h2>
+	<h3>Címsor3</h3>
+	<h4>Címsor4</h4>
+	<h5>Címsor5</h5>
+	<h6>Címsor6</h6>
+
+	<p id="elsobekezdes">
+	Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing <i>elit</i>. Nullam <strong>quis leo dictum</strong> dui vehicula <em>aliquam sed a</em> sem. Sed nulla ligula, commodo quis mollis et, porta vel tortor. Aliquam tincidunt massa purus, ut sodales purus commodo ac. Vestibulum eleifend tincidunt fringilla. Suspendisse consectetur neque sed metus sodales, at hendrerit ante rutrum.<br>entesque vitae nunc mollis, commodo sapien posuere, pulvinar orci. Nulla posuere eleifend lacus, luctus venenatis mi lacinia et. Quisque venenatis ultrices ligula, a imperdiet urna dapibus a. Phasellus consequat mauris eget est tristique, nec viverra mauris tincidunt. Morbi non diam aliquet, finibus sapien ut, ullamcorper odio. <u>Maecenas id</u> fermentum mauris, lobortis aliquet urna. Mauris sit amet velit mi. Phasellus aliquet posuere placerat.
+	</p>
+	<p>
+	<span>In vel lectus et nunc mollis mollis.</span> Praesent in est interdum, suscipit justo at, euismod ipsum. Morbi quis ex eu felis scelerisque elementum eget vitae erat. Mauris dapibus faucibus auctor. Cras condimentum malesuada massa, eu faucibus urna luctus non. Maecenas ac pretium turpis. Aenean et nibh volutpat, rhoncus dui ornare, vulputate enim. Donec suscipit tortor in felis feugiat posuere. Maecenas quis nunc dolor.
+	</p>
+	<h2 id = "vonal">Vízszintes vonal</h2>
+	<hr>
+	
+	<h2>Felsorolások</h2>
+	<!-- <ul type="square"> -->
+	<ul class="felsorolas">
+		<li>szimbolumos lista1</li>
+		<li>szimbolumos lista2</li>
+		<li>szimbolumos lista3</li>
+		<li>szimbolumos lista4</li>
+	
+	</ul>
+	<ol type="I" class="felsorolas">
+		<li>szamozott lista1</li>
+		<li>szamozott lista2</li>
+		<li>szamozott lista3</li>
+		<li>szamozott lista4</li>
+	</ol>
+	
+	<h2 id = "kepek">Képek</h2>
+	
+	<a href="kepek/tajkep1.jfif">
+	
+	<figure>
+	
+	<img src="kepek/tajkep1.jfif" alt="tajkep1" title="tájkép1" width="200">
+	<figcaption>Tájkép</figcaption>
+	
+	</figure>
+	
+	</a>
+	
+	
+	<h2 id="hiperhiv">Hiperhivatkozás</h2>
+	
+	<P>Szöveg
+		<a href="https://www.xbox.com/hu-hu/play" target="blank_"  >Kattintson rám</a>
+	</p>
+	<h2>Táblázat</h2>
+	
+	<table border="1">
+		<caption>Tábla neve</caption>
+		<thead>
+			<tr>
+				<th>1. oszlop<th/>
+				<th>2. oszlop<th/>
+				<th>3. oszlop<th/>
+				<th>4. oszlop<th/>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td colspan="3">a b c</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td rowspan="2" colspan="2">d<br> g</td>
+				<td>e</td>
+				<td rowspan="2">f 2 <br> i 3</td>
+			</tr>
+			<tr>
+				<td>h</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	</body>
+</html>

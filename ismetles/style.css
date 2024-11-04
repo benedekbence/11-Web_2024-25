@@ -1,0 +1,29 @@
+body{
+	background-color:lightblue;
+	
+}
+thead{
+	color:darkblue;
+	font-weight:bold;
+	background-color:lightgrey;
+}
+table{
+	border-color:grey;
+}
+h1{
+	text-align:center;
+	color:darkblue;
+}
+caption{
+	color:darkblue;
+}
+li{
+	list-style-type:none;
+	text-align:center;
+}
+h2{
+	text-align:center;
+}
+td{
+	background-color:lightgrey;
+}

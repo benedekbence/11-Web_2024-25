@@ -27,3 +27,6 @@ h2{
 td{
 	background-color:lightgrey;
 }
+table {
+	border:2px;
+}

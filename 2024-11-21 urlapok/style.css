@@ -1,43 +1,42 @@
+h1{
+    text-align: center;
+    text-shadow: 3px 3px 7px  darkslateblue, -3px -3px 5px rgb(13, 75, 75);
+
+}
+form{
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    background-color: rgba(56, 4, 141, 0.171);
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 body{
     text-align: center;
-    background-image: url(kepek/alma.jpg);
-    background-attachment: fixed;
-    background-size:cover ;
-    
-
-}
-h1 {
-    color:white;
-    text-shadow: 5px 5px 5px black;
 }
 
-div {
-    border:3px solid rgb(175, 175, 175);
-    padding: 30px;
-    margin:auto;
-    width:50%;
-    border-radius: 30px;
-}
-fieldset{
-    border:3px dotted rgb(175, 175, 175);
-}
-p {
-    font-size: 20px; 
-    color: white;
-    
-}
+
 legend{
-    color:white;
-    font-size: larger;
     font-weight: bold;
 }
-.textarea{
-    margin: auto;  
-    width: 60%;
+body{
+    background-color: rgba(156, 178, 201, 0.644);
 }
+fieldset{
+    border: 2px  solid white ;
+    border-radius: 15px;
+}
+
+.textareaDiv{
+    width: 60%;
+    margin: auto;
+}
+
 textarea{
     width: 100%;
 }
+
 #csuszka{
     width: 50%;
 }

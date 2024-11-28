@@ -1,0 +1,15 @@
+/* .container{
+    background-color: rgba(199, 21, 21, 0.3);
+  */
+    
+
+.row{
+    border: 1px solid black;
+}
+.row div{
+    border: 1px dotted green;
+
+}
+body{
+
+}

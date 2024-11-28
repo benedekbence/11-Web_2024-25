@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Űrlap</title>
+</head>
+
+<body>
+    <div>
+        <h1>Ürrlap használata</h1>
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <p>
+                    <label>Név</label>
+                    <input type="text" placeholder="Példa szöveg">
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="text" placeholder="_______ @ ____.__">
+                </p>
+                <p>
+                    <label>Születési év</label>
+                    <input type="number" value="2000" min="1904" max="2024">
+                <p>neme</p>
+                <p>
+                    <input type="radio" name="neme">
+                    <label>ferfi</label>
+                </p>
+                <p>
+                    <input type="radio" name="neme">
+                    <label>no</label>
+                </p>
+            </fieldset>
+            <p>
+                <label>Legmagasabb iskolai végzettség</label>
+            </p>
+            <p>
+                <input type="radio" name="vegzettseg">
+                <label>8 altalanos</label>
+                <br>
+                <input type="radio" name="vegzettseg">
+                <label>erettsegi</label>
+                <br>
+                <input type="radio" name="vegzettseg">
+                <label>egyetem</label>
+                <br>
+                <input type="radio" name="vegzettseg2">
+                <label>egyeb</label>
+            </p>
+            <p>
+                <label>Legmagasabb iskolai végzettség</label>
+            </p>
+            <p>
+                <input type="radio" name="vegzettseg2">
+                <label>8 altalanos</label>
+                <br>
+                <input type="radio" name="vegzettseg2">
+                <label>erettsegi</label>
+                <br>
+                <input type="radio" name="vegzettseg2">
+                <label>egyetem</label>
+                <br>
+                <input type="radio" name="vegzettseg2">
+                <label>egyeb</label>
+            </p>
+            <p>
+            <p>
+                <label>kedvenc szinei</label>
+            </p>
+            </p>
+            <input type="checkbox" value="zöld" class="zöld">
+            <label>zold</label>
+            <br>
+            <input type="checkbox" value="lila" class="lila">
+            <label>lila</label>
+            <br>
+            <input type="checkbox" value="kek" class="kek">
+            <label>kek</label>
+            <br>
+            <input type="checkbox" value="piros" class="piros">
+            <label>piros</label>
+            <br>
+            <input type="checkbox" value="sarga" class="sarga">
+            <label>sárga</label>
+            <br>
+            </p>
+            <fieldset>
+                <legend>Válasszon mindegyikbol egyet</legend>
+                <label>Kedvenc auto márka</label>
+                <select size="3" multiple>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="BMW" selected>BMW</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Lada">Lada</option>
+                </select>
+                <p>
+                    <label>Kedvenc zenei stilus</label>
+                    <input list="Music style">
+                    <datalist id="Music">
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Classikus">Classikus</option>
+                        <option value="Trash Metal">Trash Metal</option>
+
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>További vélemények</legend>
+                <div class="textaera">
+                    <textarea name="" id="" rows="8" cols="50">Ide várjuk a válaszát...</textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label>Értékelés</label>
+                    <label>Százalékos értékeles</label>
+                </p>
+                <input id="csuszka" type="range" min="0" max="100">
+
+
+            </fieldset>
+            <input type="button" value="OK">
+            <input type="submit">
+            <button>Kilépés</button>
+            <input type="reset" value="Adatok törlése">
+        </form>
+    </div>
+    <p id="csuzskaErteke" onchange="ertekKiirat()">
+        <script>
+            function ertekKiirat() {
+                document.getElementById("csuszkaErteke").innerHTML = 
+                document.getElementById("csuszka").value;
+            }
+        </script>
+    </p>
+</body>
+
+</html>

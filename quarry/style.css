@@ -1,0 +1,42 @@
+body{
+    background-color: red;
+}
+
+/* kepernyo szelessegere nezve */
+
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.left{
+    background-color: rgba(66, 62, 62, 0.295);
+}
+.right{
+    background-color: rgba(216, 194, 194, 0.5);
+}
+.center{
+    border:1px solid black;
+}
+@media (max-width:480px){
+    .container{
+        grid-template-columns: 1fr;
+        
+    }
+    
+}
+@media (min-width: 768px){
+
+    body{
+        background-color: green;
+    }   
+    .container{
+        grid-template-columns: 50% 50%;
+    }
+    .right{
+        grid-column: span 1;
+    }
+
+    
+}

@@ -1,0 +1,48 @@
+body{
+    background-color: beige;
+}
+div{
+    background-color: burlywood;
+    border: 1px solid black;
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    margin:3vw;
+}
+
+/* Forgatas */
+#forgatas1{
+    border-radius: 10px 0 0 0;
+    transform: rotate(-60deg);
+}
+#forgatas2{
+    border-radius: 10px 0 0 0;
+    transform: rotate(0.1turn);
+
+}
+#forgatas3{
+    border-radius: 10px 0 0 0;
+    transform: rotateY(60deg);
+}
+
+/* Nagyyítás */
+#nagyitas1{
+    transform: scale(2);
+}
+#nagyitas2{
+    transform: scale(.5);
+}
+#nagyitas3{
+    transform: scale(75%);
+}
+
+/* Eltolás */
+#eltolas1{
+    transform: translate(30px, 30px);
+}
+#eltolas2{
+    transform: translate(20px,3vw);
+}
+#eltolas3{
+    transform: translateX(50%);
+}

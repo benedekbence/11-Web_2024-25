@@ -1,0 +1,42 @@
+div{
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+.a{
+    width: 49%;
+    height: 50%;    
+    display:block;
+    margin:auto;
+    float: left;
+}
+.b{
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.c{
+    display: block;
+    float: right;
+    width: 24%;
+    height: 50%;
+}
+.d{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 49%;
+}
+.nagy{
+    width: 100%;
+    height: 1000px;
+}
+.kicsi{
+    margin:auto;
+    width: 75%;
+    height: 350px;
+    margin-top: 250px;
+    
+}

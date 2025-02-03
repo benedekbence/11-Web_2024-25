@@ -1,0 +1,60 @@
+div div{
+    width: 100px;
+    height: 70px;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+.megjelenes{
+    animation-name: lathatosag;
+    animation-duration: 5s;
+}
+
+.mozgatas{
+    animation-name: mozgas;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+    animation-delay: 1s;
+}
+
+.forgatas{
+    height: 100px;
+    transform: rotate(45deg);
+    background-image:url(catspin-spin.gif);
+}
+.forgatas1{
+    background-color: lightblue;
+    height: 100px;
+    animation-name:forgas;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mozgas{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translate(0);
+    } 
+}
+@keyframes lathatosag{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    };
+}
+@keyframes forgas{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

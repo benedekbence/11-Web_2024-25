@@ -42,18 +42,20 @@ else {
 // Ciklus
 
 // Számlálós - for
-// elöl tesztelős - while
-// hatul tesztelos - do while
-
 for (let i = 0; i < 10; i++) {
     console.log(i)
 }
-// console.log(i);
+
+
+// elöl tesztelős - while
 var j = 100;
 while (j < 110) {
     console.log(j);
     j++;
 }
+
+
+// hatul tesztelos - do while
 
 var k = 0;
 var szamok = "";
@@ -63,3 +65,6 @@ do {
 } while (k < 1010) 
     console.log(szamok);
     
+let rnd = Math.random() * 16 - 10;
+
+console.log(Math.floor(rnd));

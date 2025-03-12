@@ -7,9 +7,10 @@ for (let i = 1; i < adatok.length; i += 3) {
 }
 
 for (let i = 0; i < atlagok.length; i ++) {
-    let mini = 0;
-    for (let j = i; j < atlagok.length; j ++) {
+    let mini = i;
+    for (let j = mini; j < atlagok.length; j ++) {
         if(atlagok[j] < atlagok[mini]){
+            // mini = j;
             let csere = atlagok[j];
             atlagok[j] = atlagok[mini];
             atlagok[mini] = csere

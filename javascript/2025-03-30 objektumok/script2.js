@@ -34,11 +34,19 @@ function adatokszortir(darabolt){
     return jeloltekadat;
 }
 
+function f3(){
+    let vezetek = "Valaki"
+    let kereszt = "Valami"
+}
+
 function main(szoveg){
+    
     const darabolt =  szovegdarab(szoveg, ";");
     
 
     let objectlista = adatokszortir(darabolt);
     console.table(objectlista);
+
+    f3(objectlista);
 }
 main(szoveg);

@@ -34,13 +34,46 @@ function adatokszortir(darabolt){
     return jeloltekadat;
 }
 
-function f3(){
-    let vezetek = "Valaki"
-    let kereszt = "Valami"
+function f3(lista){
+    let vezetek = "Valaki";
+    let kereszt = "Valami";
+
+    
+    let i = 0;
+    while (i< lista.length && !(vezetek === lista[i].kepviselovez && kereszt === lista[i].kepviseloker)) {
+        i++;
+    }
+    if (i < lista.length) {
+        console.log(lista[i].szavdarab);
+    }
+    else console.log("nincs ilyen kepviselo");
+}
+
+function arany(ossz,n){
+    
+    return (n / ossz).toFixed(2);
+}
+
+function f4(lista,n){
+    let ossz = 0;
+    for (let i = 0; i < lista.length; i++) {
+        ossz += lista[i].szavdarab;
+    }
+    console.log("ennyi az arany" + arany(ossz, n));
+
+}
+function f5(lista,n){
+    
+    for (let i = 0; i < lista.length; i++) {
+        if (lista[i].adatok != "-") {
+            console.log(lista[i].adatok + "" + arany(lista[i].szavdarab,n) );
+        }
+        
+    }
 }
 
 function main(szoveg){
-    
+    const n = 12345;
     const darabolt =  szovegdarab(szoveg, ";");
     
 
@@ -48,5 +81,8 @@ function main(szoveg){
     console.table(objectlista);
 
     f3(objectlista);
+    
+    f4(objectlista,n);
+
+    f5(objectlista, n)
 }
-main(szoveg);
